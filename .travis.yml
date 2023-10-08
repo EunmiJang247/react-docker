@@ -1,0 +1,18 @@
+sudo: required # 관리자 권한을 받기 위해 
+
+language: generic 
+
+services: 
+  - docker
+
+before_install:
+  - echo "start creating an image with dockerfile"
+  - docker build -t smilejenny/docker-react-app -f Dockerfile.dev .
+
+script: 
+  - docker run -e CI=true smilejenny/docker-react-app npm run test -- --coverage
+
+after_sucess:
+  - echo "Test success"
+
+# git 에 push한다 
