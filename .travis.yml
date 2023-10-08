@@ -15,4 +15,4 @@ script:
 after_sucess:
   - echo "Test success"
 
-# git 에 push한다 
+# git 에 push한후 travis에서 확인
