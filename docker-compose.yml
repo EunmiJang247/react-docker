@@ -1,0 +1,24 @@
+version: '3'
+services: 
+  react:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - /usr/src/app/node_modules
+      - ./:/usr/src/app #현재 디렉토리에 있는 모든 파일들을 usr/src/app에서 참조하겠다
+    stdin_open: true #이거 없으면 리액트 끌때 버그남. 
+    
+  tests: 
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - /usr/src/app/node_modules
+      - ./:/usr/src/app
+    command: ["npm", "run", "test"]
+
+# 실행: docker compose up --build or docker compose up
+# 테스트까지 실행: docker-compose up --build
