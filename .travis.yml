@@ -17,19 +17,15 @@ script:
 deploy: 
   provider: elasticbeanstalk
   region: "ap-northeast-2"
-  app: "docker-react"
-  env: "Docker-react-env"
+  app: "jenny-docker"
+  env: "Jenny-docker-env"
   bucket_name: "elasticbeanstalk-ap-northeast-2-467416368414"
-  bucket_path: "docker-react"
+  bucket_path: "jenny-docker"
   on:
     branch: master
 
   access_key_id: $access_key_id
   secret_access_key: $secret_access_key
-
-# url: https://467416368414.signin.aws.amazon.com/console
-# name: jenny
-# pw: ctA1_L|1
 
 after_sucess:
   - echo "Test success"
