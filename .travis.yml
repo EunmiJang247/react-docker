@@ -12,9 +12,6 @@ before_install:
 script: 
   - docker run -e CI=true smilejenny/docker-react-app npm run test -- --coverage
 
-# after_sucess:
-#   - echo "Test success"
-
 # git 에 push한후 travis에서 확인
 
 deploy: 
@@ -33,3 +30,6 @@ deploy:
 # url: https://467416368414.signin.aws.amazon.com/console
 # name: jenny
 # pw: ctA1_L|1
+
+after_sucess:
+  - echo "Test success"
