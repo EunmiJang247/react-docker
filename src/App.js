@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          슬피울어dㅇㄴㄹㄴㅇㄹ요
+          슬피울어 learn react
         </a>
       </header>
     </div>
