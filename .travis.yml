@@ -22,13 +22,13 @@ deploy:
   region: "ap-northeast-2"
   app: "docker-react"
   env: "Docker-react-env"
-  bucket_name: "elasticbeanstalk-ap-northeast-2-675475995743"
+  bucket_name: "elasticbeanstalk-ap-northeast-2-467416368414"
   bucket_path: "docker-react"
   on:
     branch: master
 
-  access_key_id: $AWS_ACCESS_ID
-  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  access_key_id: $access_key_id
+  secret_access_key: $secret_access_key
 
 # url: https://467416368414.signin.aws.amazon.com/console
 # name: jenny
