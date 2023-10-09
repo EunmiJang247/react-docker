@@ -27,8 +27,8 @@ deploy:
   on:
     branch: master
 
-access_key_id: $AWS_ACCESS_ID
-secret_access_key: $AWS_SECRET_ACCESS_KEY
+  access_key_id: $AWS_ACCESS_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
 
 # url: https://467416368414.signin.aws.amazon.com/console
 # name: jenny
