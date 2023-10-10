@@ -17,10 +17,10 @@ script:
 deploy: 
   provider: elasticbeanstalk
   region: "ap-northeast-2"
-  app: "jenny-docker"
-  env: "Jenny-docker-env"
+  app: "Second"
+  env: "Second-env"
   bucket_name: "elasticbeanstalk-ap-northeast-2-467416368414"
-  bucket_path: "jenny-docker"
+  bucket_path: "Second-env"
   on:
     branch: master
 
